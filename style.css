@@ -1,0 +1,67 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+#ribbon {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+
+main > section {
+  margin-left: 3em;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 10vh;
+  left: 10vh;
+}
+
+
+@media screen and (min-width:992px) {
+  body {
+    background-image: url("https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fbasic_ds_venn_diagram.png?v=1587175325606");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-attachment: fixed;
+    background-position-x: 86%;
+    background-position-y: 10%;  
+  }
+  
+  #cody {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  #cody:hover {
+    position: fixed;
+    bottom: 7px;
+  }
+}
+
+
+@media screen and (max-width:992px) {
+  #cody {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 25%;
+  }
+  
+  footer {
+    display: none;
+  }
+}
