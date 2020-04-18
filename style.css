@@ -34,7 +34,7 @@ footer {
   body {
     background-image: url("https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fbasic_ds_venn_diagram.png?v=1587175325606");
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: 40vw;
     background-attachment: fixed;
     background-position-x: 86%;
     background-position-y: 10%;  
@@ -48,7 +48,7 @@ footer {
 
   #cody:hover {
     position: fixed;
-    bottom: 7px;
+    bottom: .5em;
   }
 }
 
@@ -61,6 +61,18 @@ footer {
     width: 25%;
   }
   
+  footer {
+    max-width: 70%;
+    bottom: 2em;
+    left: 2em;
+  }
+  
+  main > section {
+    max-width: 70vh;
+  }
+}
+
+@media screen and (max-width:500px) {
   footer {
     display: none;
   }
