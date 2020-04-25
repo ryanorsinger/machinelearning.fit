@@ -17,10 +17,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="./script.js" defer></script>
     <script>
     /**
     * Function that registers a click on an outbound link in Analytics.
@@ -74,5 +74,33 @@
         presented by <a href="https://github.com/ryanorsinger" target="_blank" onclick="getOutboundLink('https://github.com/ryanorsinger'); return false;">Ryan Orsinger</a>
       </section>
     </main>
+
+    <footer>
+      <p>
+        If you find this content valuable, then
+        <a href="https://codeup.com/" 
+          target="_blank" 
+          title="Apply Today!"
+          onclick="getOutboundLink('https://codeup.com/'); return false;"
+          >apply to Codeup today</a> to learn much
+        more!
+      </p>
+      <a href="https://codeup.com" title="Apply Today!" target="_blank" onclick="getOutboundLink('https://codeup.com/'); return false;"><img
+          id="logo"
+          src="https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fcodeup-logo.webp?v=1587176930388"
+      /></a>
+    </footer>
+
+    <a href="https://codeup.com" target="_blank" onclick="getOutboundLink('https://codeup.com/'); return false;"><img
+        id="ribbon"
+        src="https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fcodeup-ribbon.png?v=1587174398476"
+    /></a>
+    <a href="https://codeup.com" target="_blank" onclick="getOutboundLink('https://codeup.com/'); return false;">
+      <img
+        id="cody"
+        src="https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fcodey.webp?v=1587174510018"
+        title="Cody the Coding Duck"
+    /></a>
+    </footer>
   </body>
 </html>
