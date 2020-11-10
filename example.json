@@ -1,0 +1,4 @@
+{
+    "title": "This is an example of JSON",
+    "body": "Read in JSON and treat it like a dictionary in Python. No parsing necessary!"
+}

@@ -1,0 +1,5 @@
+This is example text.
+
+The text comes to us from request.get as a string. And it's a single string. 
+
+The way that we parse this single string of unstructured text is by splitting the string into component parts based on characters. 

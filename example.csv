@@ -1,0 +1,3 @@
+title, body
+this is an example csv, we can manually parse CSV files by splitting strings on new line characters and commas
+how to automatically parse a csv, use pandas's .read_csv and you're good to go
