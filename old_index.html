@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164560583-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164560583-2');
+    </script>
+
+    <title>MachineLearning.Fit</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
+    <script>
+    /**
+    * Function that registers a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var getOutboundLink = function(url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+        'event_callback': function(){document.location = url;}
+      });
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Machine Learning Workshop Resources!</h1>
+    <blockquote>
+      "If you can't solve a problem, then there is an easier problem you can
+      solve: find it." ― George Polya
+    </blockquote>
+    <main>
+      <h2>
+        Contents
+      </h2>
+      <section>
+        
+        <a href="https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fhandout.pdf?v=1587176833908" target="_blank">
+          <h3>Intro to Data Science <small>Handout</small></h3>
+        </a>
+        
+        <a href="https://www.kaggle.com/ryanorsinger/data-basics" target="_blank" onclick="getOutboundLink('https://www.kaggle.com/ryanorsinger/data-basics'); return false;">
+          <h3>
+            Hands-On Data Basics - <small>Python Notebook</small>
+          </h3>
+        </a>
+      
+        <a href="https://www.kaggle.com/ryanorsinger/classification-intro/" target="_blank" onclick="getOutboundLink('https://www.kaggle.com/ryanorsinger/classification-intro/'); return false;">
+          <h3>Build a Machine Learning Classifier - <small>Python Notebook</small></h3>
+        </a>
+        
+        <a href="https://www.kaggle.com/ryanorsinger/101-exercises" target="blank" onclick="getOutboundLink('https://www.kaggle.com/ryanorsinger/101-exercises'); return false;">
+          <h3>
+            Homework - 
+            <small>101 Exercises to get good fast with Python</small>
+          </h3>
+        </a>
+        
+        presented by <a href="https://github.com/ryanorsinger" target="_blank" onclick="getOutboundLink('https://github.com/ryanorsinger'); return false;">Ryan Orsinger</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        If you find this content valuable, then
+        <a href="https://codeup.com/" 
+          target="_blank" 
+          title="Apply Today!"
+          onclick="getOutboundLink('https://codeup.com/'); return false;"
+          >apply to Codeup today</a> to learn much
+        more!
+      </p>
+      <a href="https://codeup.com" title="Apply Today!" target="_blank" onclick="getOutboundLink('https://codeup.com/'); return false;"><img
+          id="logo"
+          src="https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fcodeup-logo.webp?v=1587176930388"
+      /></a>
+    </footer>
+
+    <a href="https://codeup.com" target="_blank" onclick="getOutboundLink('https://codeup.com/'); return false;"><img
+        id="ribbon"
+        src="https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fcodeup-ribbon.png?v=1587174398476"
+    /></a>
+    <a href="https://codeup.com" target="_blank" onclick="getOutboundLink('https://codeup.com/'); return false;">
+      <img
+        id="cody"
+        src="https://cdn.glitch.com/c25a6f2c-d0e6-4a30-85e7-da02e902e6ae%2Fcodey.webp?v=1587174510018"
+        title="Cody the Coding Duck"
+    /></a>
+    </footer>
+  </body>
+</html>
